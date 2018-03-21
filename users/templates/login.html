@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CSC SIG</title>
+
+    <!-- Bootstrap -->
+    <link href="{% static 'vendors/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="{% static 'vendors/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="{% static 'vendors/nprogress/nprogress.css' %}" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="{% static 'vendors/animate.css/animate.min.css' %}" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="{% static 'build/css/custom.min.css' %}" rel="stylesheet">
+	
+	<!--George teste imagem -->
+	<!--<img src="img/01.PNG" width="150px" height="100px" align="right" /> -->
+	
+		<!--<style type="text/css">
+	
+		#cx1{   position:fixed;
+				top:150px;
+				left:100px;
+				width:300px;
+				height:400px;
+				background-color:#800000;
+							
+			}
+			
+		#cx2{   position:fixed;
+				top:150px;
+				left:100px;
+				width:300px;
+				height:400px;
+				background-color:#800000;
+							
+			}
+		
+		</style> -->
+	
+  </head>
+
+  <body class="login">
+  
+				<!-- <div id="cx1"></div>
+				     <div id="cx2"></div> -->
+  
+  
+  
+    <div>
+      <a class="hiddenanchor" id="signup"></a>
+      <a class="hiddenanchor" id="signin"></a>
+
+      <div class="login_wrapper">
+        <div class="animate form login_form">
+          <section class="login_content">
+            <form action="." method="post">
+              <div class="form-group">
+                  {{ user_form.as_p }}
+                  {% csrf_token %}
+                  <p><input type="submit" value="Login"/></p>
+              </div>
+            </form>
+
+					<div>
+						<h1><img src="{% static 'img/02.PNG' %}" width="150px" height="100px"></h1>
+						<p>©2018 Direitos reservados. AUTOCODE Desenvolvimento de Sistemas e Engenharia de Gestão - CSC SIG</p>
+					</div>
+              
+          </section>
+        </div>
+
+        <div id="register" class="animate form registration_form">
+          <section class="login_content">
+            <form>
+              <h1>Crie sua conta</h1>
+              <div>
+                <input type="text" class="form-control" placeholder="Login" required="" />
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="Email" required="" />
+              </div>
+              <div>
+                <input type="password" class="form-control" placeholder="Senha" required="" />
+              </div>
+              <div>
+                <a class="btn btn-default submit" href="index.html">Cadastre-se</a>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="separator">
+                <p class="change_link">Já está cadastrado?
+                  <a href="#signin" class="to_register"> Log in </a>
+                </p>
+
+                <div class="clearfix"></div>
+                <br />
+
+                <div>
+                  <h1><i class="fa fa-desktop"></i> AUTOCODE</h1>
+                  <p>©2018 Direitos reservados. AUTOCODE Desenvolvimento de Sistemas e Engenharia de Gestão</p>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
